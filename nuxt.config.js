@@ -70,9 +70,6 @@ export default {
                 accessType: "offline",
                 codeChallengeMethod: "S256",
                 clientId: "F3AD9D43926F38498AC06F78051BBC4F",
-                // this is just a test app so it's fine I swear
-                clientSecret:
-                    "u0TV9N/LsjwBz1vQ/DrZ+8ofZ9DY/YmYCR/yCFEdZlTc68hi3/8JrBboYRozQVzb",
             },
         },
     },
