@@ -1,5 +1,10 @@
 <template>
-    <iframe ref="frame" src="https://qaapp.gaidge.com" scrolling="no" />
+    <iframe
+        ref="frame"
+        src="https://qaapp.gaidge.com"
+        scrolling="no"
+        sandbox="allow-forms allow-same-origin allow-scripts allow-storage-access-by-user-activation"
+    />
 </template>
 
 <script lang="ts">
