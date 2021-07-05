@@ -74,7 +74,7 @@ export default {
                 accessType: "offline",
                 codeChallengeMethod: "S256",
                 clientId: "F3AD9D43926F38498AC06F78051BBC4F",
-                redirectUri: "https://roushtech.github.io./SSOTest/login",
+                redirectUri: "https://roushtech.github.io/SSOTest/login",
             },
         },
     },
