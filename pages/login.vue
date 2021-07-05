@@ -13,6 +13,10 @@ export default Vue.extend({
         const strategy = this.$auth.strategy as Scheme<Oauth2SchemeOptions>;
         const query = this.$auth.ctx.query;
 
+        if (!query.code) {
+            return;
+        }
+
         const params = new URLSearchParams();
         params.append("code", query.code as string);
         params.append("client_id", strategy.options.clientId as string);
