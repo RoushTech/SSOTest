@@ -2,7 +2,6 @@
     <iframe
         ref="frame"
         src="https://qaapp.gaidge.com"
-        scrolling="no"
         sandbox="allow-forms allow-same-origin allow-scripts allow-storage-access-by-user-activation"
         height="900"
     />
