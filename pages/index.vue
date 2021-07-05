@@ -1,5 +1,5 @@
 <template>
-    <iframe src="https://qaapp.gaidge.com" />
+    <iframe ref="frame" src="https://qaapp.gaidge.com" scrolling="no" />
 </template>
 
 <script lang="ts">
