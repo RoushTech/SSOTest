@@ -82,6 +82,7 @@ export default {
 
     /** @type {import("@nuxt/types/config/router").NuxtOptionsRouter} */
     router: {
+        base: "/SSOTest/",
         middleware: ["auth"],
     },
 };
