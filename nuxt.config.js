@@ -47,6 +47,10 @@ export default {
 
     /** @type {import('@nuxtjs/auth-next').ModuleOptions} */
     auth: {
+        redirect: {
+            // this should force the oauth callback to not automatically fire
+            callback: "none",
+        },
         strategies: {
             /** @type {import('@nuxtjs/auth-next').Oauth2SchemeOptions} */
             gaidge: {
@@ -70,6 +74,7 @@ export default {
                 accessType: "offline",
                 codeChallengeMethod: "S256",
                 clientId: "F3AD9D43926F38498AC06F78051BBC4F",
+                redirectUri: "https://roushtech.github.io./SSOTest/login",
             },
         },
     },

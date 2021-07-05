@@ -24,6 +24,16 @@ export default Vue.extend({
         params.append("redirect_uri", strategy.options.redirectUri);
         params.append("grant_type", strategy.options.grantType);
 
+        const codeVerifier = this.$auth.$storage.getUniversal(
+            strategy.name + ".pkce_code_verifier"
+        ) as string;
+        this.$auth.$storage.setUniversal(
+            strategy.name + ".pkce_code_verifier",
+            null
+        );
+
+        params.append("code_verifier", codeVerifier);
+
         const result = await this.$axios.$post(
             strategy.options.endpoints.token,
             params,
