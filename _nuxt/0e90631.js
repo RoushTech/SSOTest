@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{234:function(t,e,n){"use strict";n.r(e);var r=n(1).a.extend({data:function(){},computed:{}}),c=n(46),component=Object(c.a)(r,(function(){var t=this.$createElement;return(this._self._c||t)("iframe",{ref:"frame",attrs:{src:"https://qaapp.gaidge.com",scrolling:"no"}})}),[],!1,null,null,null);e.default=component.exports}}]);
