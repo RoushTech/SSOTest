@@ -52,11 +52,13 @@ export default Vue.extend({
             result.access_token,
             result.refresh_token
         );
-        await this.$router.push({ name: "home" });
+        this.$auth.redirect("home", true);
     },
     methods: {
         async login() {
-            await this.$auth.loginWith("gaidge");
+            await this.$auth.loginWith("gaidge", {
+                params: { prompt: "none" },
+            });
         },
     },
 });
