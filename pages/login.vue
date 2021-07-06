@@ -52,7 +52,7 @@ export default Vue.extend({
             result.access_token,
             result.refresh_token
         );
-        await this.$router.push("/");
+        await this.$router.push({ name: "home" });
     },
     methods: {
         async login() {
