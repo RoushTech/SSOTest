@@ -56,9 +56,7 @@ export default Vue.extend({
     },
     methods: {
         async login() {
-            await this.$auth.loginWith("gaidge", {
-                params: { prompt: "none" },
-            });
+            await this.$auth.loginWith("gaidge");
         },
     },
 });
