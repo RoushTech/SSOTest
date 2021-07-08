@@ -35,7 +35,7 @@ export default Vue.extend({
 
             const query = `bid=${bid}&ts=${ts}&uid=${uid}`;
             const signature = hmac.update(query).digest("base64");
-            return `https://qaapp.gaidge.com?${query}&signature=${signature}`;
+            return `https://qaapp.gaidge.com/api/v1/mmg/login?${query}&signature=${signature}`;
         },
     },
     async mounted() {
