@@ -1,7 +1,7 @@
 <template>
     <div>
         <button @click="frame = !frame">Toggle Frame</button>
-        <div v-if="!frame">No frame!</div>
+        <div v-if="!frame">Frame is hidden</div>
         <iframe
             v-else
             ref="frame"
