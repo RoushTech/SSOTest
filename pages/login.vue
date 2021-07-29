@@ -52,7 +52,7 @@ export default Vue.extend({
         // this is just a test app so it's fine I swear
         params.append(
             "client_secret",
-            "u0TV9N/LsjwBz1vQ/DrZ+8ofZ9DY/YmYCR/yCFEdZlTc68hi3/8JrBboYRozQVzb"
+            "88EmB6txBo8STiN0x0CHRHMH4K8J5sqbAFzsAQc8xReRpa5UnRHPgQXXTtPqTxQj"
         );
         params.append("redirect_uri", strategy.options.redirectUri);
         params.append("grant_type", strategy.options.grantType);

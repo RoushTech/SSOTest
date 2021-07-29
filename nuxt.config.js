@@ -57,11 +57,11 @@ export default {
                 scheme: "oauth2",
                 endpoints: {
                     authorization:
-                        "https://qaapp.gaidge.com/api/v1/connect/authorize",
+                        "https://sandboxapp.gaidge.com/api/v1/connect/authorize",
 
-                    token: "https://qaapp.gaidge.com/api/v1/connect/token",
+                    token: "https://sandboxapp.gaidge.com/api/v1/connect/token",
                     userInfo:
-                        "https://qaapp.gaidge.com/api/v1/connect/userinfo",
+                        "https://sandboxapp.gaidge.com/api/v1/connect/userinfo",
                 },
                 token: {
                     maxAge: 3600,
@@ -73,7 +73,7 @@ export default {
                 grantType: "authorization_code",
                 accessType: "offline",
                 codeChallengeMethod: "S256",
-                clientId: "F3AD9D43926F38498AC06F78051BBC4F",
+                clientId: "640E323B130B685EF7D15B6D8E68C98D",
                 redirectUri: "https://roushtech.github.io/SSOTest/login",
                 scope: ["openid", "email", "profile", "offline_access"],
             },
